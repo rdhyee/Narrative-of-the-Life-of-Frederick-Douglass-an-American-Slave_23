@@ -1,7 +1,29 @@
-= NARRATIVE OF THE LIFE OF FREDERICK DOUGLASS AN AMERICAN SLAVE.
-WRITTEN BY HIMSELF
-
+= Narrative of the Life of Frederick Douglass an American Slave
+Frederick Douglass
+v0.0.1
 :TOC:
+
+[colophon]
+== Copyright
+
+This edition of _Narrative of the Life of Frederick Douglass an American Slave_ is maintained, archived, and curated as part of
+the GITENBERG PROJECT.
+
+This work is in the public domain.
+
+If you find any issues with this work, please report them at
+https://github.com/GITenberg/Narrative-of-the-Life-of-Frederick-Douglass-an-American-Slave_23/issues
+
++
+
+Cover provided by Recovering the Classics
+
+Artist: Benjy Brooke, (C) 2015
+
+Made available under a Creative Commons Attribution-NonCommercial 4.0 license
+
+https://creativecommons.org/licenses/by-nc/4.0/
+
 
 == PREFACE
 

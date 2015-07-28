@@ -1,0 +1,31 @@
+_repo: Narrative-of-the-Life-of-Frederick-Douglass_23
+creator:
+  author:
+    agent_name: Douglass, Frederick
+    aliases:
+    - Bailey, Frederick Augustus Washington
+    - Baly, Frederick Augustus Washington
+    birthdate: 1818
+    deathdate: 1895
+    gutenberg_agent_id: '34510'
+    url: http://www.gutenberg.org/2009/agents/34510
+    wikipedia: http://en.wikipedia.org/wiki/Frederick_Douglass
+gutenberg_bookshelf:
+- Slavery
+- African American Writers
+gutenberg_issued: '2006-01-12'
+gutenberg_type: Text
+identifiers:
+  gutenberg: '23'
+language: en
+publisher: Project Gutenberg
+rights: Public domain in the USA.
+rights_url: http://creativecommons.org/about/pdm
+subjects:
+- '!lcsh:Douglass, Frederick, 1818-1895'
+- '!lcsh:Slaves -- United States -- Biography'
+- '!lcsh:Abolitionists -- United States -- Biography'
+- '!lcsh:African American abolitionists -- Biography'
+- '!lcc:E300'
+title: Narrative of the Life of Frederick Douglass, an American Slave
+url: http://www.gutenberg.org/ebooks/23

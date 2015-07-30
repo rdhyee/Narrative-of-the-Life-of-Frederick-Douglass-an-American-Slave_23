@@ -22,10 +22,10 @@ publisher: Project Gutenberg
 rights: Public domain in the USA.
 rights_url: http://creativecommons.org/about/pdm
 subjects:
-- '!lcsh:Douglass, Frederick, 1818-1895'
-- '!lcsh:Slaves -- United States -- Biography'
-- '!lcsh:Abolitionists -- United States -- Biography'
-- '!lcsh:African American abolitionists -- Biography'
 - '!lcc:E300'
+- '!lcsh:Abolitionists -- United States -- Biography'
+- '!lcsh:Slaves -- United States -- Biography'
+- '!lcsh:Douglass, Frederick, 1818-1895'
+- '!lcsh:African American abolitionists -- Biography'
 title: Narrative of the Life of Frederick Douglass, an American Slave
 url: http://www.gutenberg.org/ebooks/23

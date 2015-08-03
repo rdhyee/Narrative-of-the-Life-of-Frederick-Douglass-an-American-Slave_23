@@ -9,8 +9,8 @@ creator:
   author:
     agent_name: Douglass, Frederick
     aliases:
-    - Bailey, Frederick Augustus Washington
     - Baly, Frederick Augustus Washington
+    - Bailey, Frederick Augustus Washington
     birthdate: 1818
     deathdate: 1895
     gutenberg_agent_id: '34510'
@@ -28,10 +28,10 @@ publisher: Project Gutenberg
 rights: Public domain in the USA.
 rights_url: http://creativecommons.org/about/pdm
 subjects:
-- '!lcc:E300'
-- '!lcsh:Abolitionists -- United States -- Biography'
-- '!lcsh:Slaves -- United States -- Biography'
-- '!lcsh:Douglass, Frederick, 1818-1895'
-- '!lcsh:African American abolitionists -- Biography'
+- '!lcsh: Slaves -- United States -- Biography'
+- '!lcc: E300'
+- '!lcsh: African American abolitionists -- Biography'
+- '!lcsh: Douglass, Frederick, 1818-1895'
+- '!lcsh: Abolitionists -- United States -- Biography'
 title: Narrative of the Life of Frederick Douglass, an American Slave
 url: http://www.gutenberg.org/ebooks/23

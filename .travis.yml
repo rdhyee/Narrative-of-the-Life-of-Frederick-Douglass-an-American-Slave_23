@@ -1,20 +1,20 @@
 language: ruby
-sudo: required
 before_install:
 - gem install asciidoctor tilt
-- sudo apt-get install xsltproc
-# skip_cleanup: true
 script:
-- git clone https://github.com/sethwoodworth/asciidoctor-htmlbook.git
-- asciidoctor -a toc -b xhtml5 -d book -T ./asciidoctor-htmlbook/htmlbook-autogen/
-  -d book Frederick-Douglass.asciidoc -o Frederick-Douglass.html
-- git clone https://github.com/sethwoodworth/HTMLBook
-- xsltproc -stringparam external.assets.list " " ./HTMLBook/htmlbook-xsl/epub.xsl
-  Frederick-Douglass.html
+- VERSION=`ruby -e "require 'yaml'; meta = YAML.load_file('metadata.yaml'); puts meta['_version'];"`
+- git clone https://github.com/gitenberg-dev/asciidoctor-htmlbook.git
+- asciidoctor -a toc,version=$VERSION -b xhtml5 -T ./asciidoctor-htmlbook/htmlbook-autogen/
+  -d book book.asciidoc -o book.html
+- git clone https://github.com/gitenberg-dev/HTMLBook
+- xsltproc -stringparam external.assets.list " " ./HTMLBook/htmlbook-xsl/epub.xsl book.html
 - cp ./HTMLBook/stylesheets/epub/epub.css OEBPS
-- cp cover.png OEBPS/cover.png
-- zip -rX Frederick-Douglass.epub mimetype
-- zip -rX Frederick-Douglass.epub OEBPS/ META-INF/
+- cp cover.jpg OEBPS/cover.jpg
+- if test -d "./images"; then mv ./images ./OEBPS/ ;fi
+- zip -rX book.epub mimetype
+- zip -rX book.epub OEBPS/ META-INF/
+- if test -d "OEBPS/images/"; then zip -rX book.epub OEBPS/images/ ;fi 
+- mv book.epub Narrative-of-the-Life-of-Frederick-Douglass,-an-American-Slave.epub
 branches:
   only:
   - master
@@ -22,7 +22,11 @@ deploy:
   skip_cleanup: true
   provider: releases
   api_key:
-    secure: hlvS8pru/BXucO3yYc7zjUEQ1SEH+nSaQk7X8PCWYDgecrY9wE39qh6oK2dT7jH+aRhD4CmFKfKe9R1T88oPbI3UMR9NXFtJG1pO4wTTvdCGYST6Pl/KdTYkeubHSJiaJ0FbONQCtuEnpJYI474Ai6GU0aZBwI1H8W990oD0FaM=
-  file: Frederick-Douglass.epub
-  on:
-    repo: sethwoodworth/Frederick-Douglass_76
+    secure: nc+esKRYXp35J22hbOyoQmtPACfQg8X5sfPDlXpCCFAZVoYWKkVQFzjREH7OWFAiHvYnQqfwLe52ojErupZ7ouqHbEblUoP92eWQoaGs5uTePwubTDXPnPfblwnCrwra7n3f0KvVm7ImqOSLT7GVqhpzYqqE89wB1UxYmKGL4K01narISfYWVc9F8Ko/20IH9WxV7Whdhi2dzAeUN2DS6JizP2Pb5D1roZ58DDmeiiaPP3C3xmJlbgBsgDUzX9oE1FbeeRNeukIf53zN3R5UBOvc8UDKWTzPIoFAXnCihsINcs8PgtFqa2DNTmpN12CVRehiBOwVbnbjya9+JLdHrjogsuClkv5OmZBDstiiQJgeADCDIfcTCO7tuFutt0RwKmT8CZ4InOTL5kboBpLe7IH6bkxHinhE5C5sCjSM99PIdo2f6iGwwTFZIFGT5P8ZlPn6Ty/jET5/3uatnGs6RVMjIZom1ObNmUjMTS+aTCOPZJeBY+k69ZrMgwA4PjOVB6Zr+jVyHoC/JuxUKa7xoVyJ5RROXxwOIzPJkGh8EECESRviJWrkzArPqXpirV8JfN//8Ih28wbU8xzNbn2xI67ML/vemjfSUQapgALZl06+eK4zvGj6In5TX19TP3Y6npXObVlLQApnK69cm8uklXcY7BvoxTPqDqe55TkngGo=
+  file: Narrative-of-the-Life-of-Frederick-Douglass,-an-American-Slave.epub
+  "on":
+    repo: GITenberg/Narrative-of-the-Life-of-Frederick-Douglass_23
+addons:
+  apt:
+    packages:
+    - xsltproc

@@ -14,7 +14,7 @@ script:
 - zip -rX book.epub mimetype
 - zip -rX book.epub OEBPS/ META-INF/
 - if test -d "OEBPS/images/"; then zip -rX book.epub OEBPS/images/ ;fi 
-- mv book.epub Narrative-of-the-Life-of-Frederick-Douglass,-an-American-Slave.epub
+- mv book.epub Narrative-of-the-Life-of-Frederick-Douglass-an-American-Slave.epub
 branches:
   only:
   - master
@@ -22,8 +22,8 @@ deploy:
   skip_cleanup: true
   provider: releases
   api_key:
-    secure: nc+esKRYXp35J22hbOyoQmtPACfQg8X5sfPDlXpCCFAZVoYWKkVQFzjREH7OWFAiHvYnQqfwLe52ojErupZ7ouqHbEblUoP92eWQoaGs5uTePwubTDXPnPfblwnCrwra7n3f0KvVm7ImqOSLT7GVqhpzYqqE89wB1UxYmKGL4K01narISfYWVc9F8Ko/20IH9WxV7Whdhi2dzAeUN2DS6JizP2Pb5D1roZ58DDmeiiaPP3C3xmJlbgBsgDUzX9oE1FbeeRNeukIf53zN3R5UBOvc8UDKWTzPIoFAXnCihsINcs8PgtFqa2DNTmpN12CVRehiBOwVbnbjya9+JLdHrjogsuClkv5OmZBDstiiQJgeADCDIfcTCO7tuFutt0RwKmT8CZ4InOTL5kboBpLe7IH6bkxHinhE5C5sCjSM99PIdo2f6iGwwTFZIFGT5P8ZlPn6Ty/jET5/3uatnGs6RVMjIZom1ObNmUjMTS+aTCOPZJeBY+k69ZrMgwA4PjOVB6Zr+jVyHoC/JuxUKa7xoVyJ5RROXxwOIzPJkGh8EECESRviJWrkzArPqXpirV8JfN//8Ih28wbU8xzNbn2xI67ML/vemjfSUQapgALZl06+eK4zvGj6In5TX19TP3Y6npXObVlLQApnK69cm8uklXcY7BvoxTPqDqe55TkngGo=
-  file: Narrative-of-the-Life-of-Frederick-Douglass,-an-American-Slave.epub
+    secure: Y2Ibpqx4Tn1gBYJxU3oneqG4uXyN5R0KuvwfAMivlNNeKBZFeq+ZeQLFRpJSWCKXyT5XS1Qz6Y7qW1UH+tFv+aDJHrFXQPTv5vnjmswI4owUCZyd/U3xFfBK+jwcx/KpRMMjhPUOT0erarSKJGdemfyml/XB1S2orkLgJGK9Zc+sWxbdzEgZO7mVg1Z92zGEEHuuC+LoNaL54kXTO+3ZGb9XkIvz4hpeYukVUzK+9ELp128ZPhMsdTQ128X3AfUHY/0QodF9CupAxucKLi++o3dh775rMD1R9prOHImFfxenCX5wW/ItIp/Bck6yvrrM2dXU0Jx9SHMQd4Fn4O69iMwmV4Ejz7F05PB74JSuckDLDD2JOmvV+M5iVSBksVQYJ+jp9wtqle4kb+ZoroDTDhc9IwUeLW4yozyHoONGqEdfM02cL3y6H2QewZg+oN893Z5dFYRy7Wq13Wf5XFcjnv6o6MXlvLJpmQ5ZP3h0UNvwC6cY6NAKWkDQlg2oLFbwRn3qPCAnD4aiatVt5MKNU1keGTLBK5pqCsZUfhKyqT0ZfWZicfy3dYCJ/m3t5T5DOWuYBZ5KQjki8EVLkrB8FUu1T8GGXyq+S/oUdpWqiw0r0x1UB1nzpA/fUAHU2P5dN1NSjvWCFDMj2xMOofTVOfQLMvTmAfLxqPPg0YGWxMA=
+  file: Narrative-of-the-Life-of-Frederick-Douglass-an-American-Slave.epub
   "on":
     repo: GITenberg/Narrative-of-the-Life-of-Frederick-Douglass_23
 addons:

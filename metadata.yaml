@@ -1,5 +1,5 @@
 _repo: Narrative-of-the-Life-of-Frederick-Douglass-an-American-Slave_23
-_version: 0.0.3
+_version: 0.1.0
 covers:
 - attribution: Benjy Brooke, 2015
   cover_type: original
@@ -35,5 +35,6 @@ subjects:
 - '!lcsh: African American abolitionists -- Biography'
 - '!lcsh: Douglass, Frederick, 1818-1895'
 - '!lcsh: Abolitionists -- United States -- Biography'
+- GITenberg
 title: Narrative of the Life of Frederick Douglass, an American Slave
 url: http://www.gutenberg.org/ebooks/23
